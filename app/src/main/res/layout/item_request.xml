@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@android:color/white">
+
+    <!-- Request Name -->
+    <TextView
+        android:id="@+id/requestName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service Request"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Customer Name -->
+    <TextView
+        android:id="@+id/customerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer: John Doe"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <!-- Service Type -->
+    <TextView
+        android:id="@+id/serviceType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Plumbing"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Date & Time -->
+    <TextView
+        android:id="@+id/requestDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requested on: 21st Feb 2025, 10:30 AM"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <!-- Request Status -->
+    <TextView
+        android:id="@+id/requestStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Pending"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <!-- Accept & Decline Buttons (Optional) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/acceptRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_green_dark"/>
+
+        <Button
+            android:id="@+id/declineRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decline"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

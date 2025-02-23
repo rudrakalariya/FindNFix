@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerDashboardActivity">
+
+    <!-- Location Section -->
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location for service"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/locationAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your address here"
+        android:textSize="14sp"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/locationText"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- "How can we help you today?" Section -->
+    <TextView
+        android:id="@+id/helpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How can we help you today?"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/locationAddress"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Service Categories Grid -->
+    <GridView
+        android:id="@+id/serviceGridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:numColumns="3"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:padding="16dp"
+        android:stretchMode="columnWidth"
+        app:layout_constraintTop_toBottomOf="@id/helpText"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"/>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

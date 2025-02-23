@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <!-- Name Input -->
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:hint="Full Name"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/nameInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/emailInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Role Selection (RadioGroup) -->
+    <RadioGroup
+        android:id="@+id/roleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/passwordInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/radioCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Provider"/>
+    </RadioGroup>
+
+    <!-- Initially hidden -->
+
+    <!-- Signup Button -->
+
+    <EditText
+        android:id="@+id/cityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your city"
+        app:layout_constraintBottom_toTopOf="@+id/professionInput"
+        app:layout_constraintTop_toBottomOf="@+id/roleGroup"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/professionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Enter your profession"
+        app:layout_constraintBottom_toTopOf="@+id/signUpButton"
+        tools:layout_editor_absoluteX="0dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:padding="10dp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/roleGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

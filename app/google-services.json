@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "291049837774",
+    "project_id": "findnfix-9ae87",
+    "storage_bucket": "findnfix-9ae87.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291049837774:android:55a79db7370ef824a3ec9f",
+        "android_client_info": {
+          "package_name": "com.hackaneers.findnfix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJja-Td7Kmy-qn6S6_skLtj8nl8CoqC08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

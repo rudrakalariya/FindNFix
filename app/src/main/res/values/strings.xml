@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FindNFix</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="signup_redirect">Don\'t have an account? Sign Up</string>
+    <string-array name="user_roles">
+        <item>Customer</item>
+        <item>Service Provider</item>
+    </string-array>
+
+</resources>
